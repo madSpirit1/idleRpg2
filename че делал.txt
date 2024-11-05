@@ -1,0 +1,196 @@
+!!!открывать проект из ридера, там клонировать с гита в папку
+
+
+
+https://www.youtube.com/watch?v=69pvr8x58aI&t=4s   инвентарь юнити
+
+для начала сделать чтоб при нажатии клавиши в инвентарь падал предмет
+
+
+
+
+выбор редктора кода: edit-preferencies-external tools
+https://www.youtube.com/watch?v=dWAL0ISKk-E
+в юнити интерфейс изменить. window-layout->2к3
+
+лучше видимо движок unity пользовать
+
+https://www.google.com/search?sca_esv=f7489b79a509fe41&sxsrf=ACQVn09n-T8zG9FXCjQvd-FkHftp7edzeQ:1707358024918&q=unity+%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9+%D0%BA%D1%83%D1%80%D1%81&tbm=vid&source=lnms&prmd=vinsbmt&sa=X&ved=2ahUKEwi-l9Gk1JqEAxURQfEDHcpqDr4Q0pQJegQIChAB&biw=1280&bih=559&dpr=1.5#fpstate=ive&vld=cid:c0a6dd87,vid:84zARoAR_Gc,st:0
+
+ulern -тут можно си шарп учить
+learn.unity.com -официал гайд юнити
+https://www.youtube.com/watch?v=xAtoU-FnC7o&list=PLDyJYA6aTY1k_-3fFiMVoYY04jCr-QY55
+
+https://www.youtube.com/watch?v=b2gEaeIcahc
+
+https://www.youtube.com/watch?v=EOWn1Tw3_3I
+
+
+https://www.youtube.com/watch?v=-YwfTUPZmU0&list=PLh8YQpd6tqQB5qTHdxREMqIPD2jjroKix
+
+https://www.youtube.com/watch?v=-YwfTUPZmU0&list=PLh8YQpd6tqQB5qTHdxREMqIPD2jjroKix   -хорошие уроки по игре птички
+
+
+https://www.youtube.com/watch?v=k4tDV_zq3Ak
+
+
+Top down игра
+
+https://www.youtube.com/watch?v=W94VF5ka3_E
+
+https://www.youtube.com/watch?v=72sHrcL4kqI  -тут много по виду сверху и ссылки как делать анимации
+
+https://www.youtube.com/watch?v=jKjC_Qs3oIw
+
+https://www.youtube.com/watch?v=5vhMXhic2S8&t=0s
+
+https://www.youtube.com/watch?v=5vhMXhic2S8&t=0s   -тут сохранение из фотошопа нескольких слоев автоматом
+
+https://www.youtube.com/watch?v=r9z_gBMofSo  постэффекты для сцены
+
+https://www.youtube.com/watch?v=bDIONz7omcI&t=2s   -ближний бой
+
+https://habr.com/ru/articles/413837/  -тавер дефенс туториал
+
+https://www.kodeco.com/11409307-introduction-to-unity-2d  -уроки для новичков юнити
+
+https://www.kodeco.com/2505-unity-4-3-2d-tutorial-animations  туториал по анимации
+
+https://www.mikedoesweb.com/2012/camera-shake-in-unity/  -тряска камеры
+
+нейросетка изображений https://fusionbrain.ai/editor/
+https://playground.com/create  еще нейросетка-тут переключиться на stable defusion
+
+suffering middle ages
+medieval fresco
+-------------------
+начал разработку по этому видео
+https://www.youtube.com/watch?v=5vhMXhic2S8
+перенес картинки в папку, добавил элементам sorting level
+player получил компонент capsule collider 2d-тут растягиваем область по игроку,
+ rigid body 2d-gravity scale 0 чтоб игрок не падал
+ -----------
+ АНИМАЦИИ
+ ctrl+6 откроет панель анимации
+ https://www.youtube.com/watch?v=W94VF5ka3_E   -тут делают анимации
+ ---------------------------
+ картинка листа бумаги  -хороший запрос. можно добавить "старого"
+ https://sotni.ru/fon-sostarennyy-list-bumagi/
+ --------------------
+ у экрана игры есть play maximized, чтоб запускать на весь экран
+ ==========!!!!!!!==================
+[System.Serializable]
+Мы добавляем сверху [System.Serializable], чтобы экземпляры класса можно было изменять в инспекторе. Это позволяет нам быстро менять все значения класса Level, даже когда игра запущена. Это невероятно полезно для балансировки игры.
+ ==========!!!!!!!==================
+ nstantiate -создавать различные объекты 
+ 
+ ---------------------
+ https://www.youtube.com/watch?v=Uz6x89Saw8M&t=2s  анимация по клику кнопки
+ 
+ -------------------
+ https://www.youtube.com/watch?v=-gC1u7qHMY4   2d платформер
+ 
+ ---------------
+ https://professorweb.ru/my/csharp/charp_theory/level1/index1.php  -полное обучение c#
+ --------------
+ 
+ https://www.youtube.com/watch?v=-LuV5_D8fLY  пример создания анимаций на ящиках комода
+ 
+ ---------------------
+ https://www.youtube.com/watch?v=1ZLMhMRSoLg&t=51s  -тут показывают как поправить анимацию относительно центра объекта, а не относительно центра сцены или место анимирования
+ -------------
+  // towerIcon.SetActive(true);
+        GameObject newTowerIcon =Instantiate(towerIcon, transform.position, Quaternion.identity);
+       
+        GameObject child = newTowerIcon.transform.GetChild(0).gameObject;// сделал подобъект, чтоб анимация воспроизводилась не в центре экрана, а в месте спана объекта
+        child.GetComponent<Animator>().Play("IncreaseIconTower");
+		---------------------
+		
+		
+		
+---------------------
+https://www.youtube.com/watch?v=R7qW89jyGZs&t=22s   -загрузка из файла ресурсов ---ТУТ ИМЕННО ЗАГРУЗКА РЕСУРОСОВ. ЗАГРУЗКА СЕЙВОВ С СЕРИАЛИЗАЦИЕЙ НИЖЕ. нормальный ниже
+
+
+ [Header("Settings")]
+    [SerializeField]
+	
+	https://www.youtube.com/watch?v=lwpQp8B-QUs&t=7s  сохранение в файл. ЗАГРУЗКА СЕЙВОВ С СЕРИАЛИЗАЦИЕЙ
+	
+	
+	
+----------
+Debug.log("")- вывод в с #
+https://www.youtube.com/watch?v=tRFO7uFhI7o&t=55s  -загрузка из xml
+https://www.youtube.com/watch?v=NN5XhVi3LRc   к предыдущему видео пример диалога из xml
+
+
+https://habr.com/ru/companies/otus/articles/814949/  в самом низу загрузка xml со схемой
+
+Debug.log()
+
+https://www.youtube.com/watch?v=2XQsKNHk1vk создание меню
+
+
+https://www.youtube.com/watch?v=ex9Ie8KcIEM  отпимизация, текстурный атлас 
+
+
+
+
+https://www.youtube.com/watch?v=E-zUxIVnYUE про scripyable object, класс для загрузки данных из файла
+
+https://www.youtube.com/watch?v=OzCI06es5QQ  карутины- последовательность действий, например в анимации с временными паузами
+
+
+
+Debug.log("")- вывод в с #
+
+
+задача заполнить инвентарь несколькими элементами
+
+https://www.youtube.com/watch?v=91O-VWnfaUQ&t=7s  еще видео про инвентарь-3д подбор предметов в инвентарь, фигня
+
+https://www.youtube.com/watch?v=RUz6E6D7Odg про события
+
+
+https://www.youtube.com/playlist?list=PLOKAzMGgK9xsvyCg9xq9XFBNFl05G43JQ  -тут делают 2д игру, в конце 4 урока про инвентарь
+
+
+
+https://www.youtube.com/watch?v=9B3-qlPeUVk&t=133s  еще ролик про инвентарь РАБОЧИЙ ИНЕВЕНТАРЬ, ПО НЕМУ ДЕЛАЛ
+
+
+https://www.youtube.com/playlist?list=PLKWKqJ1bWRh6LRgkFUCbhULJXPrsHtTAR хорошие уроки
+
+------------------------------------
+
+гит
+passad24@ya.ru
+Vfrc240295;
+
+
+https://github.com/madSpirit1/idleRpg.git
+
+
+
+git config --global core.autocrlf false
+git init
+git add .
+git commit -m "first"
+git remote add origin https://github.com/madSpirit1/idleRpg.git
+git branch -M main
+git push -u origin main
+---------------------------
+https://www.youtube.com/watch?v=x0lg8--NGB0  загрузка конфигов из ексель таблицы, она переделывается в джейсон и загружается в билд вроде как
+
+https://www.youtube.com/watch?v=VG1yfCLG4G8  сохранение и загрузка
+
+
+--------------------------
+https://www.youtube.com/watch?v=syyloVTRyCQ&list=PLKWKqJ1bWRh6k1HUu6TyN4i4CIUJ-aLvX&index=1  плейлист по созданию игры
+
+https://www.youtube.com/watch?v=M-D_MwLfshk&list=PLKWKqJ1bWRh6k1HUu6TyN4i4CIUJ-aLvX&index=3  переключение сцен, экран загрузки
+
+
+меню
+
